@@ -2,6 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import { createGlobalStyle } from 'styled-components'
 
+import Timezones from './timezones.js'
+
 const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
@@ -24,6 +26,7 @@ render(
   <React.Fragment>
     <GlobalStyle/>
     <h1>hello world</h1>
+    <Timezones/>
   </React.Fragment>
   , document.getElementById('app')
 )
